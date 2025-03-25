@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -170,3 +171,177 @@
     </script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinaciones Tuto Z</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <style>
+        .swal2-popup {
+            width: 200%; 
+            height: 110%; 
+            background-color: #f5f5dc; 
+        }
+        .swal2-confirm {
+            background-color: #E94E77; 
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+        .swal2-confirm:hover {
+            background-color: #C93C62; 
+        }
+        .combinations-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        .combination-item {
+            width: 300px;
+            text-align: center;
+        }
+        .combination-item h3 {
+            margin-bottom: 10px;
+            font-size: 12px;
+        }
+        .images-container {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+        }
+        .combination-item img {
+            width: 83px;
+            height: auto;
+            border-radius: 8px;
+        }
+        #showDetails {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        #showDetails:hover {
+            background-color: #3E8E41;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center; margin-top: 50px;">
+        <button id="showDetails">
+            Mostrar Premios
+        </button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        document.getElementById("showDetails").addEventListener("click", function() {
+            Swal.fire({
+                html: ` 
+                    <div class="combinations-container">
+                        <div class="combination-item">
+                            <h3>PAREJA (2 Puntos)</h3>
+                            <div class="images-container">
+                                <img src="Imagenes/Pareja1.png" alt="Ejemplo Pareja 1">
+                                <img src="Imagenes/Pareja2.png" alt="Ejemplo Pareja 2">
+                            </div>
+                        </div>
+                        <div class="combination-item">
+                            <h3>TRÍO (5 Puntos)</h3>
+                            <div class="images-container">
+                                <img src="Imagenes/Trio123.png" alt="Ejemplo Trío 1">
+                                <img src="Imagenes/Trio123.png" alt="Ejemplo Trío 2">
+                                <img src="Imagenes/Trio123.png" alt="Ejemplo Trío 3">
+                            </div>
+                        </div>
+                        <div class="combination-item">
+                            <h3>DOBLE PAREJA (6 Puntos)</h3>
+                            <div class="images-container">
+                                <img src="Imagenes/DoblePareja1.png" alt="Ejemplo Doble Pareja 1">
+                                <img src="Imagenes/DoblePareja2.png" alt="Ejemplo Doble Pareja 2">
+                            </div>
+                        </div>
+                        <div class="combination-item">
+                            <h3>CUARTETO (10 Puntos)</h3>
+                            <div class="images-container">
+                                <img src="Imagenes/Cuartero1234.png" alt="Ejemplo Cuarteto 1">
+                                <img src="Imagenes/Cuartero1234.png" alt="Ejemplo Cuarteto 2">
+                                <img src="Imagenes/Cuartero1234.png" alt="Ejemplo Cuarteto 3">
+                                <img src="Imagenes/Cuartero1234.png" alt="Ejemplo Cuarteto 4">
+                            </div>
+                        </div>
+                        <div class="combination-item">
+                            <h3>ESCALERA REFERENCIA (3) (6 Puntos)</h3>
+                            <div class="images-container">
+                                <img src="Imagenes/Escaleraref(3)1.png" alt="Ejemplo Escalera Referencia 3-1">
+                                <img src="Imagenes/Escaleraref(3)2.png" alt="Ejemplo Escalera Referencia 3-2">
+                                <img src="Imagenes/Escaleraref(3)3.png" alt="Ejemplo Escalera Referencia 3-3">
+                            </div>
+                        </div>
+                        <div class="combination-item">
+                            <h3>ESCALERA REFERENCIA (4) (8 Puntos)</h3>
+                            <div class="images-container">
+                                <img src="Imagenes/Escaleraref(3)1.png" alt="Ejemplo Escalera Referencia 4-1">
+                                <img src="Imagenes/Escaleraref(3)2.png" alt="Ejemplo Escalera Referencia 4-2">
+                                <img src="Imagenes/Escaleraref(3)3.png" alt="Ejemplo Escalera Referencia 4-3">
+                                <img src="Imagenes/Escaleraref(4)1.png" alt="Ejemplo Escalera Referencia 4-4">
+                            </div>
+                        </div>
+                        <div class="combination-item">
+                            <h3>ESCALERA COLOR (3) (10 Puntos)</h3>
+                            <div class="images-container">
+                                <img src="Imagenes/EscaleraColor1.png" alt="Ejemplo Escalera Color 3-1">
+                                <img src="Imagenes/EscaleraColor2.png" alt="Ejemplo Escalera Color 3-2">
+                                <img src="Imagenes/EscaleraColor3.png" alt="Ejemplo Escalera Color 3-3">
+                            </div>
+                        </div>
+                        <div class="combination-item">
+                            <h3>ESCALERA COLOR (4) (15 Puntos)</h3>
+                            <div class="images-container">
+                                <img src="Imagenes/EscaleraColor1.png" alt="Ejemplo Escalera Color 4-1">
+                                <img src="Imagenes/EscaleraColor2.png" alt="Ejemplo Escalera Color 4-2">
+                                <img src="Imagenes/EscaleraColor3.png" alt="Ejemplo Escalera Color 4-3">
+                                <img src="Imagenes/EscaleraColor4.png" alt="Ejemplo Escalera Color 4-4">
+                            </div>
+                        </div>
+                        <div class="combination-item">
+                            <h3>ESCALERA IMPERIAL (+1/3 del valor de la escalera)</h3>
+                            <div class="images-container">
+                                <img src="Imagenes/EscaleraColor1.png" alt="Ejemplo Escalera Imperial 1">
+                                <img src="Imagenes/EscaleraColor2.png" alt="Ejemplo Escalera Imperial 2">
+                                <img src="Imagenes/EscaleraColor3.png" alt="Ejemplo Escalera Imperial 3">
+                            </div>
+                        </div>
+                        <div class="combination-item">
+                            <h3>ESCALERA ESTRELLAS (3) (15 Puntos)</h3>
+                            <div class="images-container">
+                                <img src="Imagenes/EscaleraEstrellas1.png" alt="Ejemplo Escalera Estrellas 3-1">
+                                <img src="Imagenes/EscaleraEstrellas2.png" alt="Ejemplo Escalera Estrellas 3-2">
+                                <img src="Imagenes/EscaleraEstrellas3.png" alt="Ejemplo Escalera Estrellas 3-3">
+                            </div>
+                        </div>
+                        <div class="combination-item">
+                            <h3>ESCALERA ESTRELLAS (4) (20 Puntos)</h3>
+                            <div class="images-container">
+                                <img src="Imagenes/EscaleraEstrellas1.png" alt="Ejemplo Escalera Estrellas 4-1">
+                                <img src="Imagenes/EscaleraEstrellas2.png" alt="Ejemplo Escalera Estrellas 4-2">
+                                <img src="Imagenes/EscaleraEstrellas3.png" alt="Ejemplo Escalera Estrellas 4-4">
+                                <img src="Imagenes/EscaleraEstrellas4.png" alt="Ejemplo Escalera Estrellas 4-4">
+                            </div>
+                        </div>
+                    </div>
+                `,
+                confirmButtonText: "Cerrar",
+                confirmButtonColor: "#E94E77",
+                width: "90%"
+            });
+        });
+    </script>
+</body>
+</html>
+>>>>>>> 33f8f5f5c7225ae1230017330e95a8fc93481054

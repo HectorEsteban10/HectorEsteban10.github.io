@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Nombre Goles Asistencias PatidosJ Equipo
 ------ ----- ----------- -------- ------
 
@@ -27,4 +28,35 @@ Asistencias Npartidos Index
 15 32 1
 15 22 3
 4  31 4
+=======
+Nombre Goles Asistencias PatidosJ Equipo
+------ ----- ----------- -------- ------
+
+Secuencial: goleadores.txt caracter entre campos $
+Bale$4$15$32$Real Madrid$Budimir$8$3$1$Real osasuna$Lebron$10$15$22$Real Madrid$Morata$20$4$31$Atletico de Madrid
+
+
+Directo/Aleatorio goleadores_directo.txt 
+Nombre(15)  Goles(2)  Asistencias(3)  PartidosJ(2)  Equipo(90)
+------ ----- ------------ --------- ------
+Bale          4 15 32Real 
+Budimir       8 3 1Real Osasuna
+Lebron        10 15 22Real Madrid
+Morata        20 4 31Atletico de Madrid
+
+Indexado goleadores_goles.txt (goleadores de mayor a menor goles)
+
+Goles    Index 
+-----    -----
+20       4
+10       3
+8        2
+4        1
+
+Indexado Asistencias/Npartidos goleadores_asis_npar.txt
+Asistencias Npartidos Index 
+15 32 1
+15 22 3
+4  31 4
+>>>>>>> 33f8f5f5c7225ae1230017330e95a8fc93481054
 3   1 2

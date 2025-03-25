@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 1.¿Qué etiqueta se utiliza para crear un formulario?</p>
     form
 2.¿Qué framework se ha utilizado en clase como ayuda?</p>
@@ -7,4 +8,15 @@
 4.¿Cómo se crea una lista ordenada en HTML?
     ol      
 5.¿Qué etiqueta sirve para insertar una imagen?
+=======
+1.¿Qué etiqueta se utiliza para crear un formulario?</p>
+    form
+2.¿Qué framework se ha utilizado en clase como ayuda?</p>
+    bootstrap      
+3.¿Cómo se define un enlace en HTML?</p>
+    a      
+4.¿Cómo se crea una lista ordenada en HTML?
+    ol      
+5.¿Qué etiqueta sirve para insertar una imagen?
+>>>>>>> 33f8f5f5c7225ae1230017330e95a8fc93481054
     img
