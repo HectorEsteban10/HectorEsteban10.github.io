@@ -1,0 +1,37 @@
+<!-- jacko_01.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Michael Jackson</title>
+    <script>
+        function updateAge() {
+            let edad1 = document.getElementById('edad1');
+            let edad2 = document.getElementById('edad2');
+            edad1.value = parseInt(edad1.value) + 1;
+            edad2.value = parseInt(edad2.value) - 2;
+        }
+    </script>
+</head>
+<body>
+    <fieldset>
+        <legend>Data</legend>
+        Edad1: <input type="number" id="edad1" ><br>
+        Edad2: <input type="number" id="edad2" ><br>
+        <button onclick="updateAge()">Update</button>
+    </fieldset>
+    
+    <fieldset>
+        <legend>LP</legend>
+        Disco: <input type="text" id="disco"><br>
+        N° Unidades: <input type="number" id="unidades"><br>
+        <button onclick="location.href='jacko_02.html'">COMPRAR</button>
+    </fieldset>
+    
+    <fieldset>
+        <legend>Biografía</legend>
+        Año Publicado: <input type="date" id="anio"><br>
+        Fecha Título: <input type="date" id="fecha"><br>
+        <button onclick="location.href='jacko_03.html'">LEER</button>
+    </fieldset>
+</body>
+</html>

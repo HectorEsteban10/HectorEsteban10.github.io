@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cartel de Preguntas</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('images/fondo.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            color: #f4e1d2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;}
+        .container {
+            text-align: center;
+            max-width: 800px;
+            padding: 20px;}
+        h1 {
+            font-size: 2.5em;
+            color: #ffe34d;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px #000;}
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;}
+        .single {
+            grid-column: span 2;}
+        .question-box {
+            background: linear-gradient(135deg, #ff7eb3, #ff758c);
+            border: 2px solid #8f44fd;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            color: #ffffff;
+            text-shadow: 1px 1px 2px #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s, background 0.3s;}
+        .question {
+            font-size: 1.2em;
+            font-weight: bold;
+            text-align: center;
+            transition: color 0.3s, transform 0.3s;}
+        .answer {
+            margin-top: 10px;
+            font-size: 1.5em;
+            color: #ffe34d;
+            text-align: center;
+            transition: color 0.3s, transform 0.3s;}
+        .image {
+            margin-top: 15px;
+            width: 150px;
+            height: 100px;
+            object-fit: contain;
+            object-position: center;}
+        .question-box:hover {
+            background: linear-gradient(135deg, #ff758c, #ff7eb3); 
+            transform: scale(1.05);}
+        .question:hover {
+            color: #fc056c; 
+            transform: scale(1.1);}
+        .answer:hover {
+            color: #fff700; 
+            transform: scale(1.1);}
+</style>
+</head>
+<body>
+    <div class="container">
+    <h1>Cartel de Preguntas</h1>
+    <div class="grid">
+        <div class="question-box">
+            <p class="question">¿Qué etiqueta se utiliza para crear un formulario?</p>
+            <p class="answer">form</p>
+            <img src="images/form.png" alt="Imagen" class="image">
+        </div>
+        <div class="question-box">
+            <p class="question">¿Qué etiqueta se utiliza para definir un encabezado de nivel 1 en HTML?</p>
+            <p class="answer">h1</p>
+            <img src="images/h1.jpg" alt="Imagen" class="image">
+        </div>
+            <div class="question-box">
+            <p class="question">¿Cómo se define un enlace en HTML?</p>
+            <p class="answer">a</p>
+            <img src="images/enlaces.png" alt="Imagen" class="image">
+        </div>
+        <div class="question-box">
+            <p class="question">¿Cómo se crea una lista ordenada en HTML?</p>
+            <p class="answer">ol</p>
+            <img src="images/lista.png" alt="Imagen" class="image">
+        </div>
+        <div class="question-box single">
+            <p class="question">¿Qué etiqueta sirve para insertar una imagen?</p>
+            <p class="answer">img</p>
+            <img src="images/imagenes.png" alt="Imagen" class="image">
+        </div>
+        </div>
+    </div>
+</body>
+</html>
