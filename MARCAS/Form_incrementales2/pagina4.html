@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pagina 4</title>
+
+        <script type="text/javascript" src="utilidades1.js"></script>
+        <script>
+            function cargaDatos() {
+                setValue("NombreSS4", getValue("NombreSS"));
+                setValue("PasswordPP4", getValue("PasswordPP"));
+                setValue("ContadorCC4", parseInt(getValue("ContadorCC")) + 1);
+                setValue("Contador2C4", parseInt(getValue("Contador2C")) + 2);
+                setValue("Num4", getValue("Num"));
+                setValue("Dia4", getValue("Dia"));
+                setValue("CumpleA4", getValue("CumpleA"));
+                setValue("EmailA4", getValue("EmailA"));
+                setValue("MesA4", getValue("MesA"));
+                setValue("RangoM4", getValue("RangoM"));
+            }
+        </script>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+                background: linear-gradient(to bottom right, #4CAF50, #2E7D32);
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center; 
+                height: 125vh; 
+            }
+            h1 {
+                margin-bottom: 20px; 
+                text-align: center;
+                font-size: 24px;
+                text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            }
+
+            .form-container {
+                background: rgba(0, 0, 0, 0.7);
+                padding: 40px;
+                border-radius: 17px; 
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+                text-align: center; 
+                width: 350px;
+                max-width: 90%;
+            }
+
+            .form-container label {
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+
+            .form-container input[type="text"],
+            .form-container input[type="password"],
+            .form-container input[type="number"],
+            .form-container input[type="date"] {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: none;
+                border-radius: 5px;
+                box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+            }
+
+            .form-container button {
+                background-color: #FFC107;
+                color: black;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+                width: 106%;
+            }
+
+            .form-container button:hover {
+                background-color: #FF9800;
+            }
+        </style>
+    </head>
+    <body onload="cargaDatos()">
+        <div class="form-container">
+            <h1>Rellena este formulario</h1>
+            <form action="index.html" method="get">
+            
+                <label for="fname">Nombre:</label>
+                <input type="text" name="NombreSS4" readonly>
+                
+                <label for="fname">Password:</label>
+                <input type="password" name="PasswordPP4" readonly>
+                
+                <label for="lname">Num Lista:</label>
+                <input type="number" name="Num4" readonly>
+                
+                <label for="lname">Dia:</label>
+                <input type="date" name="Dia4" readonly>
+                
+                <label for="frame">Contador:</label>
+                <input type="number" name="ContadorCC4" readonly>
+                
+                <label for="fname">Contador2:</label>
+                <input type="number" name="Contador2C4" readonly>
+                
+                <label for="fname">Fecha de cumpleaños:</label>
+                <input type="date" name="CumpleA4" readonly>
+                
+                <label for="fname">Email:</label>
+                <input type="text" name="EmailA4" readonly>
+                
+                <label for="lname">Mes Actual:</label>
+                <input type="text" name="MesA4" readonly>
+                
+                <label for="lname">Rango:</label>
+                <input type="range" name="RangoM4" readonly>
+                
+                <button type="submit" class="btn btn-primary">Siguiente</button>
+            </form>
+        </div>
+    </body>
+</html>
