@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    background-image: url('Imagenes_Aventura/Fondo\ gris.png');
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed;
+}
