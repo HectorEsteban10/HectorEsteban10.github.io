@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -14,8 +13,8 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background: url('Imagenes/Fondo2.png') no-repeat center center/cover;
-            font-family: Arial, sans-serif;
+            background: url('Imagenes/otro.png') no-repeat center center/cover;
+            font-family: 'Arial', sans-serif;
             text-align: center;
         }
         h1 {
@@ -29,152 +28,75 @@
             padding: 10px;
             font-size: 1em;
             text-align: center;
-            width: 80%;
-            max-width: 200px;
-            border: 1px solid #ccc;
+            width: 150px;
+            border: 2px solid gray;
             border-radius: 5px;
         }
-        .boton-rojo {
-            margin-top: 20px;
-            width: 50px;
-            height: 50px;
-            background-color: red;
-            border-radius: 50%;
-            border: none;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .boton-rojo:active {
-            background-color: darkred;
-        }
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 1.8em;
-            }
-            p {
-                font-size: 1em;
-            }
-            input {
-                width: 90%;
-                max-width: 180px;
-            }
-            .boton-rojo {
-                width: 45px;
-                height: 45px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <h1>La Salle</h1>
-    <p>Introduce el código para acceder</p>
-    <input type="text" id="codigo" maxlength="5" placeholder="*****">
-    <button class="boton-rojo" onclick="validarCodigo()">✔</button>
-    
-    <script>
-        function validarCodigo() {
-            const codigoCorrecto = "12345"; // Cambia esto al código correcto
-            const inputCodigo = document.getElementById("codigo").value;
-            
-            if (inputCodigo === codigoCorrecto) {
-                window.location.href = "siguiente_pagina.html"; // Página a la que se redirige
-            } else {
-                alert("Código incorrecto. Inténtalo de nuevo.");
-                document.getElementById("codigo").value = "";
-            }
-        }
-    </script>
-</body>
-=======
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acceso La Salle</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
+        .contenedor-boton {
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background: url('Imagenes/Fondo2.png') no-repeat center center/cover;
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        h1 {
-            font-size: 2em;
-            color: black;
-        }
-        p {
-            font-size: 1.2em;
-        }
-        input {
-            padding: 10px;
-            font-size: 1em;
-            text-align: center;
-            width: 80%;
-            max-width: 200px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+            margin-top: 50px;
         }
         .boton-rojo {
-            margin-top: 20px;
             width: 50px;
             height: 50px;
             background-color: red;
             border-radius: 50%;
             border: none;
             cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease;
         }
-        .boton-rojo:active {
-            background-color: darkred;
-        }
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 1.8em;
-            }
-            p {
-                font-size: 1em;
-            }
-            input {
-                width: 90%;
-                max-width: 180px;
-            }
-            .boton-rojo {
-                width: 45px;
-                height: 45px;
-            }
+        .boton-rojo:hover {
+            transform: scale(1.1);
         }
     </style>
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-borderless@4/borderless.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <h1>La Salle</h1>
     <p>Introduce el código para acceder</p>
-    <input type="text" id="codigo" maxlength="5" placeholder="*****">
-    <button class="boton-rojo" onclick="validarCodigo()">✔</button>
+    <input type="password" id="codigo" maxlength="5" placeholder="*****">
+    
+    <div class="contenedor-boton">
+        <button class="boton-rojo" onclick="validarCodigo()"></button>
+    </div>
     
     <script>
         function validarCodigo() {
-            const codigoCorrecto = "12345"; // Cambia esto al código correcto
+            const codigoCorrecto = "54321"; 
             const inputCodigo = document.getElementById("codigo").value;
-            
+
             if (inputCodigo === codigoCorrecto) {
-                window.location.href = "siguiente_pagina.html"; // Página a la que se redirige
+                window.location.href = "ele.html"; 
             } else {
-                alert("Código incorrecto. Inténtalo de nuevo.");
-                document.getElementById("codigo").value = "";
+                Swal.fire({
+                    title: '¡Código Incorrecto!',
+                    text: 'Intenta de nuevo.',
+                    icon: 'error',
+                    showClass: {
+                        popup: 'animate__animated animate__zoomIn'
+                    },
+                    hideClass: {
+                        popup: 'animate__animated animate__zoomOut'
+                    },
+                    confirmButtonText: 'Aceptar',
+                    confirmButtonColor: '#FF6F61', 
+                    background: '#f2f2f2', 
+                    customClass: {
+                        popup: 'popup-modern', 
+                        title: 'title-modern', 
+                        content: 'content-modern', 
+                        confirmButton: 'confirm-btn-modern' 
+                    },
+                    timer: 4000, 
+                    timerProgressBar: true 
+                });
+                document.getElementById("codigo").value = ""; 
             }
         }
     </script>
 </body>
->>>>>>> 33f8f5f5c7225ae1230017330e95a8fc93481054
 </html>
