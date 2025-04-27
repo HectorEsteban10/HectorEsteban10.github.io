@@ -7,8 +7,8 @@
   
   /* Fondo general */
   body {
-    font-family: 'VT323', monospace; /* La fuente similar que usaste en la imagen */
-    background-image: url('Images/images.jpeg'); /* Tu imagen de fondo */
+    font-family: 'VT323', monospace;
+    background-image: url('Images/images.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -20,7 +20,7 @@
   
   /* Estilo del cartel */
   .menu {
-    background: linear-gradient(to bottom, #d7a97b, #e0b88e); /* Degradado suave como en tu imagen */
+    background: linear-gradient(to bottom, #d7a97b, #e0b88e);
     width: 90%;
     max-width: 400px;
     padding: 20px;
@@ -35,7 +35,7 @@
     font-size: 32px;
     font-weight: normal;
     margin-bottom: 5px;
-    text-transform: none; /* No todo en mayúscula */
+    text-transform: none;
   }
   
   /* Subtítulo */
@@ -76,7 +76,8 @@
     justify-content: space-between;
     align-items: center;
     margin: 5px 0;
-    font-size: 18px;
+    font-size: 20px; /* Misma fuente y tamaño para producto y precio */
+    font-family: 'VT323', monospace; /* FORZAMOS aquí también */
   }
   
   /* Pie de página */
@@ -115,6 +116,10 @@
   
     .icono {
       font-size: 24px;
+    }
+  
+    .item {
+      font-size: 18px; /* Un poco más pequeño para móviles */
     }
   }
   
