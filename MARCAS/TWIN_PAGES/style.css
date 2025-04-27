@@ -3,12 +3,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/* Fondo general */
-body {
-    font-family: 'Courier New', Courier, monospace;
-    background-image: url('Images/images.jpeg'); /* Asegúrate de que esta ruta esté correcta */
+  }
+  
+  /* Fondo general */
+  body {
+    font-family: 'VT323', monospace; /* La fuente similar que usaste en la imagen */
+    background-image: url('Images/images.jpeg'); /* Tu imagen de fondo */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -16,11 +16,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-/* Estilo del cartel */
-.menu {
-    background-color: #f0c78a; /* Color más claro como en la imagen */
+  }
+  
+  /* Estilo del cartel */
+  .menu {
+    background: linear-gradient(to bottom, #d7a97b, #e0b88e); /* Degradado suave como en tu imagen */
     width: 90%;
     max-width: 400px;
     padding: 20px;
@@ -28,92 +28,93 @@ body {
     border: 2px solid #8b4b20;
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
-}
-
-/* Título principal */
-.menu h1 {
-    font-size: 28px;
-    font-weight: bold;
+  }
+  
+  /* Título principal */
+  .menu h1 {
+    font-size: 32px;
+    font-weight: normal;
     margin-bottom: 5px;
-    text-transform: uppercase;
-}
-
-/* Subtítulo */
-.subtitulo {
+    text-transform: none; /* No todo en mayúscula */
+  }
+  
+  /* Subtítulo */
+  .subtitulo {
     font-style: italic;
-    font-size: 12px;
-    margin-bottom: 10px;
-}
-
-/* Línea divisoria */
-hr {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+  /* Línea divisoria */
+  hr {
     border: none;
     border-top: 2px solid #8b4b20;
     margin: 10px 0 20px 0;
-}
-
-/* Secciones */
-.section {
+  }
+  
+  /* Secciones */
+  .section {
     margin-bottom: 20px;
-}
-
-/* Subtítulos de secciones */
-.section h2 {
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-/* Íconos */
-.icono {
+  }
+  
+  /* Subtítulos de secciones */
+  .section h2 {
     font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Íconos */
+  .icono {
+    font-size: 28px;
     margin: 10px 0;
-}
-
-/* Ítems del menú */
-.item {
+  }
+  
+  /* Ítems del menú */
+  .item {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 5px 0;
-    font-size: 16px;
-}
-
-/* Pie de página */
-.footer {
-    font-size: 10px;
+    font-size: 18px;
+  }
+  
+  /* Pie de página */
+  .footer {
+    font-size: 12px;
     margin-top: 20px;
     color: #8b4b20;
-}
-
-/* Link del pie */
-.footer a {
+  }
+  
+  /* Link del pie */
+  .footer a {
     color: yellow;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
-}
-
-/* Hover del link */
-.footer a:hover {
+  }
+  
+  /* Hover del link */
+  .footer a:hover {
     color: red;
-}
-
-/* Responsive */
-@media (max-width: 500px) {
+  }
+  
+  /* Responsive */
+  @media (max-width: 500px) {
     .menu {
-        padding: 15px;
+      padding: 15px;
     }
-
+  
     .menu h1 {
-        font-size: 24px;
+      font-size: 28px;
     }
-
+  
     .section h2 {
-        font-size: 20px;
+      font-size: 20px;
     }
-
+  
     .icono {
-        font-size: 20px;
+      font-size: 24px;
     }
-}
+  }
+  
