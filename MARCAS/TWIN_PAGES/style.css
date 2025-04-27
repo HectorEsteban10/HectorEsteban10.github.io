@@ -7,7 +7,7 @@
   
   /* Fondo general */
   body {
-    font-family: 'VT323', monospace;
+    font-family: 'Space Mono', monospace;
     background-image: url('Images/images.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -32,10 +32,9 @@
   
   /* Título principal */
   .menu h1 {
-    font-size: 32px;
-    font-weight: normal;
+    font-size: 28px;
+    font-weight: normal; /* No negrita */
     margin-bottom: 5px;
-    text-transform: none;
   }
   
   /* Subtítulo */
@@ -76,8 +75,8 @@
     justify-content: space-between;
     align-items: center;
     margin: 5px 0;
-    font-size: 20px; /* Misma fuente y tamaño para producto y precio */
-    font-family: 'VT323', monospace; /* FORZAMOS aquí también */
+    font-size: 18px;
+    font-family: 'Space Mono', monospace; /* Igual en nombre y precio */
   }
   
   /* Pie de página */
@@ -107,7 +106,7 @@
     }
   
     .menu h1 {
-      font-size: 28px;
+      font-size: 24px;
     }
   
     .section h2 {
@@ -119,7 +118,7 @@
     }
   
     .item {
-      font-size: 18px; /* Un poco más pequeño para móviles */
+      font-size: 16px;
     }
   }
   
