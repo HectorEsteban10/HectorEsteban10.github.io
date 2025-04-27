@@ -8,7 +8,7 @@
   /* Fondo general */
   body {
     font-family: 'Courier New', monospace;
-    background-image: url('fondo-cafe.jpg'); /* Asegúrate de tener la imagen en tu proyecto */
+    background-image: url('Images/images.jpeg'); /* Asegúrate de tener la imagen en tu proyecto */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
