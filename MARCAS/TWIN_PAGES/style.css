@@ -1,122 +1,117 @@
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  body, html {
-    height: 100%;
-    font-family: 'Courier New', Courier, monospace;
-    position: relative;
-    overflow-x: hidden;
-  }
-  
-  .background {
-    background-image: url('/mnt/data/5f3021c7-7b6b-4e41-a097-faf054932c67.png');
+  /* Fondo general */
+  body {
+    font-family: 'Courier New', monospace;
+    background-image: url('fondo-cafe.jpg'); /* Asegúrate de tener la imagen en tu proyecto */
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
-    filter: brightness(0.7);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
+    background-position: center;
+    min-height: 100vh;
   }
   
-  .menu-cartel {
-    background: #d7a97b;
-    margin: 2rem auto;
-    padding: 2rem;
+  /* Estilo del cartel */
+  .menu {
+    background-color: #d7a97b;
     width: 90%;
     max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #8b4b20;
     border-radius: 12px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.6);
-    text-align: center;
   }
   
-  h1 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
+  /* Título principal */
+  .menu h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
   }
   
-  .fecha {
+  /* Subtítulo */
+  .subtitulo {
     font-style: italic;
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
+    font-size: 12px;
+    margin-bottom: 10px;
   }
   
+  /* Línea divisoria */
   hr {
     border: none;
-    height: 2px;
-    background: #8b0000;
-    margin: 1rem 0;
+    border-top: 2px solid #8b4b20;
+    margin: 10px 0;
   }
   
-  .setas-section, .postres-section {
-    margin-bottom: 2rem;
+  /* Secciones */
+  .section {
+    margin-bottom: 20px;
   }
   
-  h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 0.5rem;
+  /* Subtítulos de secciones */
+  .section h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
   }
   
-  .circle {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    background-color: #5d4b3c;
-    border-radius: 50%;
+  /* Íconos */
+  .icono {
+    font-size: 24px;
+    margin: 5px 0;
   }
   
-  .icon {
-    width: 30px;
-    margin: 1rem 0;
-  }
-  
-  .menu-list {
-    list-style: none;
-  }
-  
-  .menu-list li {
+  /* Ítems del menú */
+  .item {
     display: flex;
     justify-content: space-between;
-    margin: 0.5rem 0;
+    margin: 5px 0;
+    font-size: 16px;
   }
   
-  .price {
-    margin-left: 1rem;
+  /* Pie de página */
+  .footer {
+    font-size: 10px;
+    margin-top: 20px;
+    color: #8b4b20;
   }
   
-  footer {
-    margin-top: 1.5rem;
-  }
-  
-  .website-link {
+  /* Link del pie */
+  .footer a {
     color: yellow;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
   }
   
-  .website-link:hover {
+  /* Hover del link */
+  .footer a:hover {
     color: red;
   }
   
+  /* Responsive */
   @media (max-width: 500px) {
-    .menu-cartel {
-      padding: 1rem;
+    .menu {
+      padding: 15px;
     }
-    h1 {
-      font-size: 1.5rem;
+  
+    .menu h1 {
+      font-size: 24px;
     }
-    .icon {
-      width: 25px;
+  
+    .section h2 {
+      font-size: 20px;
+    }
+  
+    .icono {
+      font-size: 20px;
     }
   }
   
