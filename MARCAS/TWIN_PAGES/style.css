@@ -1,123 +1,77 @@
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Fondo general */
 body {
-  font-family: 'Space Mono', monospace;
-  background-image: url('Images/images.jpeg');
+  font-family: sans-serif;
+  background-image: url('imagenes/cafe.png');
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-/* Estilo del cartel */
 .menu {
-  background: linear-gradient(to bottom, #d7a97b, #e0b88e);
-  width: 90%;
-  max-width: 400px;
+  background-color: #f1c27d;
+  width: 500px;
   padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   text-align: center;
-  border: 2px solid #8b4b20;
-  border-radius: 10px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
 }
 
-/* Título principal */
-.menu h1 {
-  font-size: 28px;
-  font-weight: normal; /* No negrita */
-  margin-bottom: 5px;
+h1 {
+  font-family: Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
+  font-size: 38px;
 }
 
-/* Subtítulo */
-.subtitulo {
-  font-style: italic;
-  font-size: 14px;
-  margin-bottom: 15px;
+h2 {
+  margin-top: 30px;
+  padding-top: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
 }
 
-/* Línea divisoria */
-hr {
-  border: none;
-  border-top: 2px solid #8b4b20;
-  margin: 10px 0 20px 0;
-}
-
-/* Secciones */
-.section {
-  margin-bottom: 20px;
-}
-
-/* Subtítulos de secciones */
-.section h2 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-/* Íconos */
-.icono {
-  font-size: 28px;
+.line {
+  border-top: 5px solid brown;
   margin: 10px 0;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Ítems del menú */
-.item {
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+li {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin: 5px 0;
-  font-size: 18px;
-  font-family: 'Space Mono', monospace; /* Igual en nombre y precio */
+  padding: 5px 0;
 }
 
-/* Pie de página */
 .footer {
-  font-size: 12px;
+  font-size: 0.8em;
   margin-top: 20px;
-  color: #8b4b20;
+  color: #a89a6e;
+  justify-content: center;
+  align-items: center;
+}
+a{
+  color: orange;
+  text-decoration: underline;
+  justify-content: center;
+  align-items: center;
+}
+a:hover {
+  color: orangered;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Link del pie */
-.footer a {
-  color: yellow;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-/* Hover del link */
-.footer a:hover {
-  color: red;
-}
-
-/* Responsive */
-@media (max-width: 500px) {
-  .menu {
-    padding: 15px;
-  }
-
-  .menu h1 {
-    font-size: 24px;
-  }
-
-  .section h2 {
-    font-size: 20px;
-  }
-
-  .icono {
-    font-size: 24px;
-  }
-
-  .item {
-    font-size: 16px;
-  }
+img{
+  width: 50px;
 }
