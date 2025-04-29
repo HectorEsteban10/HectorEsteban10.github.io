@@ -1,69 +1,77 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: url('Images/cafe.png') no-repeat center center fixed;
+  font-family: sans-serif;
+  background-image: url('Images/cafe.png');
   background-size: cover;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
-  margin: 0;
 }
 
-.menu-container {
-  background: #f1c27d;
-  width: 520px;
-  padding: 25px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+.menu {
+  background-color: #f1c27d;
+  width: 500px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   text-align: center;
-  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
-  font-size: 36px;
-  margin: 0;
+  font-family: Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
+  font-size: 38px;
 }
 
 h2 {
-  font-size: 28px;
-  margin-top: 25px;
-  color: #4b3b2b;
+  margin-top: 30px;
+  padding-top: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
 }
 
-.divider {
-  border: none;
-  height: 4px;
-  background-color: brown;
-  margin: 15px 0;
+.line {
+  border-top: 5px solid brown;
+  margin: 10px 0;
+  justify-content: center;
+  align-items: center;
 }
 
-.item-list {
-  list-style-type: none;
-  margin: 0;
+ul {
+  list-style: none;
   padding: 0;
+  margin: 0;
   text-align: left;
 }
 
-.item-list li {
+li {
   display: flex;
   justify-content: space-between;
-  padding: 6px 0;
+  padding: 5px 0;
 }
 
-.icon {
-  width: 55px;
-  margin: 10px 0;
-}
-
-.contact {
-  font-size: 0.85em;
+.footer {
+  font-size: 0.8em;
+  margin-top: 20px;
   color: #a89a6e;
-  margin-top: 25px;
+  justify-content: center;
+  align-items: center;
 }
-
-a {
-  color: darkorange;
+a{
+  color: orange;
   text-decoration: underline;
+  justify-content: center;
+  align-items: center;
 }
-
 a:hover {
   color: orangered;
+  justify-content: center;
+  align-items: center;
+}
+
+img{
+  width: 50px;
 }
