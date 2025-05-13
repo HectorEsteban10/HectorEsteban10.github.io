@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Cromo Tutoz</title>
+  <title>Cromo final detallado</title>
   <style>
     body {
       background: #ddd;
@@ -11,48 +11,68 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
+      margin: 0;
     }
 
     .card {
       width: 400px;
       height: 560px;
       border: 2px solid #000;
-      border-radius: 15px;
-      background-color: white;
-      display: flex;
-      flex-direction: column;
-      padding: 15px;
+      border-radius: 20px;
+      background-color: rgb(243, 9, 9);
+      display: grid;
+      grid-template-rows:
+        40px 
+        40px 
+        330px 
+        2px  
+        40px 
+        2px  
+        40px 
+        40px 
+      ;
       box-sizing: border-box;
-      position: relative;
+      overflow: hidden;
     }
 
-    .top-info {
-      font-size: 0.9em;
+    .row {
+      display: flex;
     }
 
-    .top-info b {
-      display: block;
-      margin-bottom: 2px;
-    }
-
-    .attribute-box {
-      position: absolute;
-      top: 15px;
-      right: 15px;
-      background: white;
-      border: 2px solid #000;
-      border-radius: 15px;
-      padding: 5px 10px;
+    .cell {
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.95em;
       font-weight: bold;
-      font-size: 0.9em;
+      padding: 0 8px;
+    }
+
+    .half {
+      width: 50%;
+    }
+
+    .attribute {
+      height: 80px; 
+      border-left: 2px solid #000;
+      border-bottom: 2px solid #000;
+    }
+
+    .left-top {
+      border-right: 2px solid #000;
+      border-bottom: 2px solid #000;
+    }
+
+    .left-bottom {
+      border-right: 2px solid #000;
+      border-bottom: 2px solid #000;
     }
 
     .picture-container {
-      margin-top: 10px;
-      position: relative;
-      height: 270px;
-      border: 2px solid #000;
-      border-radius: 10px;
+      width: 100%;
+      height: 100%;
+      border-bottom: 2px solid #000;
       overflow: hidden;
     }
 
@@ -62,77 +82,96 @@
       object-fit: cover;
     }
 
-    .description {
-      font-size: 0.9em;
-      margin-top: 10px;
+    .line-divider {
+      background: black;
+      width: 100%;
+      height: 2px;
     }
 
-    .bottom-info {
-      margin-top: auto;
+    .description, .author {
+      padding: 6px 10px;
+      font-size: 0.85em;
       display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-      font-size: 0.9em;
-      border-top: 1px solid #000;
-      padding-top: 12px;
+      align-items: center;
+    }
+
+    .author-line {
+      background: black;
+      width: 100%;
+      height: 2px;
+    }
+
+    .bottom {
+      display: flex;
+      border-top: 2px solid #000;
+      height: 100%;
     }
 
     .stars {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 8px; 
+    }
+
+    .star-row {
       display: flex;
       flex-direction: column;
       gap: 2px;
     }
 
-    .star-row {
+    .star-line {
       display: flex;
       gap: 4px;
+      justify-content: center; 
     }
 
     .star {
       color: gold;
-      font-size: 1.3em;
+      font-size: 1.2em;
     }
 
     .footer {
-      text-align: center;
-      font-size: 0.9em;
-      margin-top: 8px;
-      color: #333;
+      width: 50%;
+      border-left: 2px solid #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1em;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-
-<div class="card" style="background-color: White;">
-  <div class="attribute-box">SUPER_FUERZA</div>
-
-  <div class="top-info">
-    <b>Name:</b> JOSE<br>
-    <b>Artist:</b> ARTISTA<br>
-    <b>Button:</b> MINombreReal
+<div class="card">
+  <div class="row">
+    <div class="cell half left-top">Superman</div>
+    <div class="cell half attribute" rowspan="2">Atributo</div>
   </div>
-
+  <div class="row">
+    <div class="cell half left-bottom">Héctor</div>
+  </div>
   <div class="picture-container">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Cristiano_Ronaldo_playing_for_Al_Nassr_FC_against_Persepolis%2C_September_2023_%28cropped%29.jpg" alt="Picture">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Cristiano_Ronaldo_playing_for_Al_Nassr_FC_against_Persepolis%2C_September_2023_%28cropped%29.jpg" alt="Imagen">
   </div>
-
-  <div class="description">Esto es mi descripcion</div>
-
-  <div class="bottom-info">
-    <div class="stars">
-      <div class="star-row">
+  <div class="line-divider"></div>
+  <div class="description">Breve descripción</div>
+  <div class="author-line"></div>
+  <div class="author">Héctor Esteban</div>
+  <div class="bottom">
+  <div class="stars">
+    <div class="star-row">
+      <div class="star-line">
         <span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span>
       </div>
-      <div class="star-row">
+      <div class="star-line">
         <span class="star">⭐</span><span class="star">⭐</span><span class="star">⭐</span>
       </div>
     </div>
   </div>
-
-  <div class="footer">
-     4 /  13
-  </div>
+  <div class="footer">4 / 13</div>
 </div>
-
+</div>
 </body>
 </html>
