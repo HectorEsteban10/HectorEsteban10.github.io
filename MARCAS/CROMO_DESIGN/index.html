@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Cromo final detallado</title>
+  <title>Cromo </title>
   <style>
     body {
       background: #ddd;
@@ -17,9 +17,9 @@
     .card {
       width: 400px;
       height: 560px;
-      border: 5px solid red;
+      border: 5px solid green;
       border-radius: 20px;
-      background-color: rgb(20, 68, 226);
+      background-image: url(imagenes/fondo_carta.jfif);
       display: grid;
       grid-template-rows:
         40px 
@@ -57,16 +57,19 @@
       height: 80px; 
       border-left: 2px solid #000;
       border-bottom: 2px solid #000;
+      font-size: 50px;
     }
 
     .left-top {
       border-right: 0px solid #000;
       border-bottom: 2px solid #000;
+      height: 50px;
     }
 
     .left-bottom {
       border-right: 0px solid #000;
       border-bottom: 2px solid #000;
+      margin-top: 10px;
     }
 
     .picture-container {
@@ -147,25 +150,40 @@
       align-items: center;
       font-size: 1em;
       font-weight: bold;
+      padding-left: 40px;
     }
+
+    .conjunto{
+      justify-content: space-between;
+      display: flex;
+    }
+
+    .fuerza{
+      height: 10px; 
+      width: 50%;
+      padding-left: 10px;
+      padding-top: 21px;
+      font-weight: bold;
+    }
+
   </style>
 </head>
 <body>
 <div class="card">
   <div class="row">
-    <div class="cell half left-top">Superman</div>
-    <div class="cell half attribute" rowspan="2">Atributo</div>
+    <div class="cell half left-top">MegaAntimadridista</div>
+    <div class="cell half attribute" rowspan="2">6 / 13</div>
   </div>
   <div class="row">
     <div class="cell half left-bottom">Héctor</div>
   </div>
   <div class="picture-container">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Cristiano_Ronaldo_playing_for_Al_Nassr_FC_against_Persepolis%2C_September_2023_%28cropped%29.jpg" alt="Imagen">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcjeYt8rJ5YAE49onWlz6DQCCy3EqZI1Kl6w&s" alt="Imagen">
   </div>
   <div class="line-divider"></div>
-  <div class="description">Breve descripción</div>
+  <div class="description">Sr Florentino siempre te roba en su impresora</div>
   <div class="author-line"></div>
-  <div class="author">Héctor Esteban</div>
+  <div class="author">Héctor Esteban Miranda</div>
   <div class="bottom">
   <div class="stars">
     <div class="star-row">
@@ -177,7 +195,9 @@
       </div>
     </div>
   </div>
-  <div class="footer">4 / 13</div>
+
+  <div class="conjunto"><div class="footer">Vardrid</div><div class="fuerza">+ 1</div></div>
+  
 </div>
 </div>
 </body>
